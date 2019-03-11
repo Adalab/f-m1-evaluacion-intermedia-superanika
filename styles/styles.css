@@ -39,12 +39,19 @@ main {
     background-color: #3CDBC0;
     display: flex;
     justify-content: center;
-    align-items: center
-   
+    align-items: center;
 }
-p {
+h1 {
     width: 155px;
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
+}
+@media all and (min-width: 768px) {
+    header {
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
 }
