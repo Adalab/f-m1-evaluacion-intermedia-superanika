@@ -4,7 +4,7 @@ body {
     height: 100vh;
     font-family: "Rubik", sans-serif;
 }
-header {
+.header {
     width: 100vw;
     position: fixed;
     background-color: #FFFFFF;
@@ -17,7 +17,7 @@ header {
     width: 155px;
     margin: 10px;
 }
-ul {
+.menu_items {
     width: 155px;
     margin-bottom: 13px;
     padding: 0;
@@ -28,33 +28,35 @@ ul {
 li {
     list-style: none;
     margin: 0;
+    text-transform: uppercase;
 }
-li a {
+.menu_link {
     text-decoration: none;
     color: #4a4a4a;
     font-size: 16px;
 }
-main {
+#home {
     height: 100%;
     background-color: #3CDBC0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1 {
+.title {
     width: 155px;
     font-size: 30px;
     text-align: center;
     color: #FFFFFF;
+    text-transform: capitalize;
 }
 @media all and (min-width: 768px) {
-    header {
+    .header {
         box-sizing: border-box;
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 30px;
     }
-    h1 {
+    .title {
         font-size: 40px;
     }
 }
